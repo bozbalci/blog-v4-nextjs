@@ -3,11 +3,6 @@ export default [
     title: "Links",
     links: [
       {
-        title: "Home",
-        url: "/",
-        external: false,
-      },
-      {
         title: "Blog",
         url: "/blog",
         external: false,
@@ -25,6 +20,11 @@ export default [
       {
         title: "Contact",
         url: "/contact",
+        external: false,
+      },
+      {
+        title: "MDX",
+        url: "/mdx-sample",
         external: false,
       },
     ],

@@ -36,37 +36,38 @@ module.exports = {
       },
       colors: {
         primary: {
-          ...colors.purple,
+          ...colors.gray,
           950: "#340562",
           1000: "#0D0119",
         },
-        secondary: colors.teal,
+        secondary: colors.gray,
         gray: colors.trueGray,
+        // gray: colors.teal,
       },
       width: {
         "9/10": "90%",
       },
       fontFamily: {
         // sans: ["Oxygen", "sans-serif"],
-        serif: "Playfair Display, serif",
+        // serif: "Playfair Display, serif",
       },
       typography: (theme) => ({
         DEFAULT: {
           css: [
-            {
-              h1: {
-                fontFamily: theme("fontFamily.serif"),
-                fontWeight: 400,
-              },
-              h2: {
-                fontFamily: theme("fontFamily.serif"),
-                fontWeight: 400,
-              },
-              h3: {
-                fontFamily: theme("fontFamily.serif"),
-                fontWeight: 400,
-              },
-            },
+            // {
+            //   h1: {
+            //     fontFamily: theme("fontFamily.serif"),
+            //     fontWeight: 400,
+            //   },
+            //   h2: {
+            //     fontFamily: theme("fontFamily.serif"),
+            //     fontWeight: 400,
+            //   },
+            //   h3: {
+            //     fontFamily: theme("fontFamily.serif"),
+            //     fontWeight: 400,
+            //   },
+            // },
           ],
         },
         light: {

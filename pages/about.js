@@ -1,15 +1,19 @@
-import Container from "components/container";
-import Layout from "components/layout";
-import Head from "next/head";
+import ContentLayout from "components/content-layout";
 
 export default function Index() {
   return (
-    <>
-      <Layout>
-        <Head>
-          <title>About Page</title>
-        </Head>
-      </Layout>
-    </>
+    <ContentLayout>
+      <ContentLayout.Head>
+        <title>About Page</title>
+      </ContentLayout.Head>
+      <ContentLayout.Main>
+        <div className="prose dark:prose-light">
+          <h1>this is content</h1>
+          <p>yeah</p>
+        </div>
+        <div className="bg-secondary-500 h-16"></div>
+      </ContentLayout.Main>
+      <ContentLayout.Side>hello</ContentLayout.Side>
+    </ContentLayout>
   );
 }
