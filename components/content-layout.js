@@ -17,7 +17,7 @@ export default function ContentLayout({ children }) {
 
   return (
     <Layout>
-      <Head>{headContent}</Head>
+      {headContent || null}
       <div className="grid grid-cols-3 gap-6">
         <article className="col-span-3 lg:col-span-2">{mainContent}</article>
         {sideContent.length ? (
@@ -31,7 +31,7 @@ export default function ContentLayout({ children }) {
 }
 
 export function HeadContent({ children }) {
-  return children;
+  return <Head>{children}</Head>;
 }
 
 HeadContent.displayName = "HeadContent";
