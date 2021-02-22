@@ -7,24 +7,24 @@ export default [
         url: "/",
         external: false,
       },
-      {
-        title: "Blog",
-        url: "/blog",
-        external: false,
-      },
+      // {
+      //   title: "Blog",
+      //   url: "/blog",
+      //   external: false,
+      // },
       {
         title: "About",
         url: "/about",
         external: false,
       },
-      {
-        title: "Works",
-        url: "/works",
-        external: false,
-      },
+      // {
+      //   title: "Works",
+      //   url: "/works",
+      //   external: false,
+      // },
       {
         title: "Contact",
-        url: "/contact",
+        url: "mailto:me@unsystem.dev?subject=Hello%20there&body=Hi%20Berk!",
         external: false,
       },
     ],

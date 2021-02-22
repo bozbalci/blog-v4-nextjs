@@ -1,7 +1,8 @@
 import ContentLayout from "components/content-layout";
 
-import MDXSample, { Side, frontMatter } from "components/mdx-sample.mdx";
+import MDXSample, { Side, frontMatter } from "content/pages/mdx-sample.mdx";
 import Time from "components/time";
+import Prose from "components/prose";
 
 export default function Index() {
   return (
@@ -10,10 +11,10 @@ export default function Index() {
         <title>MDX Sample</title>
       </ContentLayout.Head>
       <ContentLayout.Main>
-        <div className="prose dark:prose-light prose-md xl:prose-lg max-w-none">
+        <Prose fullWidth>
           <h1>{frontMatter.title}</h1>
           <MDXSample />
-        </div>
+        </Prose>
       </ContentLayout.Main>
       <ContentLayout.Side>
         <Side />

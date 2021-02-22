@@ -36,13 +36,16 @@ module.exports = {
       },
       colors: {
         primary: {
-          ...colors.gray,
-          950: "#340562",
-          1000: "#0D0119",
+          ...colors.trueGray,
+          // 950: "#340562",
+          // 1000: "#0D0119",
         },
-        secondary: colors.gray,
+        secondary: colors.trueGray,
         gray: colors.trueGray,
         // gray: colors.teal,
+      },
+      minHeight: {
+        "1/2-screen": "50vh",
       },
       width: {
         "9/10": "90%",
