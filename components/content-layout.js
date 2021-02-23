@@ -4,7 +4,7 @@ import Head from "next/head";
 import Layout from "./layout";
 import SideBox from "./side-box";
 
-export default function ContentLayout({ children }) {
+export default function ContentLayout({ children, ...props }) {
   const headContent = React.Children.map(children, (child) =>
     child.type.displayName === "HeadContent" ? child : null
   );
@@ -16,7 +16,7 @@ export default function ContentLayout({ children }) {
   );
 
   return (
-    <Layout>
+    <Layout {...props}>
       {headContent || null}
       <div className="grid grid-cols-3 gap-6">
         <article className="col-span-3 lg:col-span-2">{mainContent}</article>

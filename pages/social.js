@@ -1,17 +1,18 @@
 import ContentLayout from "components/content-layout";
+import Prose from "components/prose";
 
 import SocialMDX from "content/pages/social.mdx";
 
-export default function About() {
+export default function Social() {
   return (
     <ContentLayout>
       <ContentLayout.Head>
         <title>Social Links - unsystem</title>
       </ContentLayout.Head>
       <ContentLayout.Main>
-        <div className="prose dark:prose-light">
+        <Prose fullWidth>
           <SocialMDX />
-        </div>
+        </Prose>
       </ContentLayout.Main>
     </ContentLayout>
   );

@@ -1,16 +1,14 @@
-import ContentLayout from "components/content-layout";
+import Head from "next/head";
 
-import Time from "components/time";
+import Layout from "components/layout";
+import Prose from "components/prose";
 
 export default function Index() {
   return (
-    <ContentLayout>
-      <ContentLayout.Head>
+    <Layout noHeader>
+      <Head>
         <title>Index Page</title>
-      </ContentLayout.Head>
-      <ContentLayout.Main>
-        <div>This is the index.</div>
-      </ContentLayout.Main>
-    </ContentLayout>
+      </Head>
+    </Layout>
   );
 }

@@ -4,7 +4,7 @@ import MDXSample, { Side, frontMatter } from "content/pages/mdx-sample.mdx";
 import Time from "components/time";
 import Prose from "components/prose";
 
-export default function Index() {
+export default function MDXPage() {
   return (
     <ContentLayout>
       <ContentLayout.Head>
