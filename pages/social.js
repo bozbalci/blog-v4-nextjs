@@ -7,7 +7,7 @@ export default function Social() {
   return (
     <ContentLayout>
       <ContentLayout.Head>
-        <title>Social Links - unsystem</title>
+        <title>Social Links / unsystem</title>
       </ContentLayout.Head>
       <ContentLayout.Main>
         <Prose fullWidth>

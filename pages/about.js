@@ -7,7 +7,7 @@ export default function About() {
   return (
     <ContentLayout>
       <ContentLayout.Head>
-        <title>About - unsystem</title>
+        <title>About / unsystem</title>
       </ContentLayout.Head>
       <ContentLayout.Main>
         <Prose fullWidth>

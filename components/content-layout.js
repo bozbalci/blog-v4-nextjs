@@ -18,14 +18,16 @@ export default function ContentLayout({ children, ...props }) {
   return (
     <Layout {...props}>
       {headContent || null}
-      <div className="grid grid-cols-3 gap-6">
-        <article className="col-span-3 lg:col-span-2">{mainContent}</article>
-        {sideContent.length ? (
-          <aside className="col-span-3 md:col-span-2 lg:col-span-1 py-6 lg:py-0">
-            <SideBox>{sideContent}</SideBox>
-          </aside>
-        ) : null}
-      </div>
+      <main className="w-9/10 mx-auto py-8">
+        <div className="grid grid-cols-3 gap-6">
+          <article className="col-span-3 lg:col-span-2">{mainContent}</article>
+          {sideContent.length ? (
+            <aside className="col-span-3 md:col-span-2 lg:col-span-1 py-6 lg:py-0">
+              <SideBox>{sideContent}</SideBox>
+            </aside>
+          ) : null}
+        </div>
+      </main>
     </Layout>
   );
 }
