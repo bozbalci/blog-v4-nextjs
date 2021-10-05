@@ -5,15 +5,13 @@ export default function NotFound() {
   return (
     <ContentLayout>
       <ContentLayout.Head>
-        <title>404 / unsystem</title>
+        <title>404 / bozbalci</title>
       </ContentLayout.Head>
       <ContentLayout.Main>
-        <div className="w-full flex items-center justify-center">
-          <Prose centered fullWidth>
-            <h1>404</h1>
-            <p>The page is not found.</p>
-          </Prose>
-        </div>
+        <Prose fullWidth>
+          <h1>404</h1>
+          <p>The page is not found.</p>
+        </Prose>
       </ContentLayout.Main>
     </ContentLayout>
   );

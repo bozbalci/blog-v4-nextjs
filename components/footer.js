@@ -10,14 +10,14 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-8 sm:py-12 bg-gray-200 dark:bg-primary-900 text-gray-900 dark:text-primary-100">
+    <footer className="py-8 sm:py-12 bg-gray-200 dark:bg-secondary-900 text-gray-900 dark:text-secondary-100">
       <nav className="w-9/10 mx-auto" aria-label="Footer">
         <div className="lg:flex justify-between">
           <div className="sm:w-128 w-full grid grid-cols-2 sm:grid-cols-2 gap-8 sm:gap-12">
             {footerLinks.map((section, sectionIndex) => (
               <div key={sectionIndex}>
                 {section.title ? (
-                  <h2 className="tracking-widest uppercase text-primary-900 dark:text-primary-300 text-xs mb-2">
+                  <h2 className="tracking-widest uppercase text-primary-900 dark:text-secondary-300 text-xs mb-2">
                     {section.title}
                   </h2>
                 ) : null}

@@ -9,9 +9,7 @@ export default function Layout({ children, ...props }) {
       <Meta />
       {!props.noHeader ? <Header /> : null}
       <Breakpoint />
-      <div className="bg-gray-50 dark:bg-gray-900 transition-colors duration-50">
-        {children}
-      </div>
+      <div className="bg-gray-50 dark:bg-gray-900">{children}</div>
       <Footer />
     </>
   );

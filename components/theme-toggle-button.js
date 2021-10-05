@@ -15,6 +15,9 @@ export default function ThemeToggleButton() {
   };
 
   return (
+    /**
+     * TODO Add focus styles here
+     */
     <button
       className={classNames(
         "uppercase tracking-wide font-semibold",

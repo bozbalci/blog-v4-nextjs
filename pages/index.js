@@ -8,17 +8,15 @@ export default function Index() {
   return (
     <Layout noHeader>
       <Head>
-        <title>unsystem</title>
+        <title>Berk Özbalcı</title>
       </Head>
-      <div className="min-h-screen">
-        <div className="grid">
-          <div className="text-4xl p-8 dark:text-white">
-            <span className="font-black tracing-tight leading-none">
-              Berk Özbalcı
-            </span>{" "}
-            is a software engineer, Web enthusiast and musician.
-          </div>
-          <div className="bg-secondary-900 w-full h-96"></div>
+      <div className="p-8 md:p-24 lg:p-36 xl:p-48 2xl:p-64">
+        <div className="text-2xl sm:text-3xl md:text-4xl dark:text-white">
+          Hi! I'm{" "}
+          <span className="font-black tracing-tight leading-none">
+            Berk Özbalcı
+          </span>
+          , a full-stack developer and amateur musician.
         </div>
       </div>
     </Layout>

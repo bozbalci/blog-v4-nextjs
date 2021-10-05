@@ -10,18 +10,18 @@ export default function Header() {
   const headerSection = headerLinks[0];
 
   return (
-    <header className="py-6 bg-gray-50 dark:bg-primary-900 text-black dark:text-primary-100">
+    <header className="py-6 bg-gray-50 dark:bg-gray-900 text-black dark:text-white">
       <div className="w-9/10 mx-auto">
-        <nav
-          className="inline-block border border-black shadow-black dark:border-white dark:shadow-white"
-          aria-label="Primary"
-        >
+        <nav className="inline-block" aria-label="Primary">
           <div className="flex justify-start items-baseline">
-            <div className="mr-4 sm:mr-6 bg-black text-white dark:bg-primary-300 dark:text-primary-900">
+            <div className="mr-4 sm:mr-6 bg-black text-white dark:bg-white dark:text-black">
               <Link href="/">
                 <a>
-                  <div className="p-2 font-serif font-semibold text-xl lowercase">
-                    Unsystem
+                  <div
+                    className="p-2 font-mono font-semibold text-xl"
+                    lang="tr"
+                  >
+                    Berk Özbalcı
                   </div>
                 </a>
               </Link>

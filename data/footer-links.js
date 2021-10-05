@@ -24,7 +24,7 @@ export default [
       // },
       {
         title: "Contact",
-        url: "mailto:me@unsystem.dev?subject=Hello%20there&body=Hi%20Berk!",
+        url: "mailto:hey@bozbalci.me?subject=Hello%20there&body=Hi%20Berk!",
         external: false,
       },
     ],
