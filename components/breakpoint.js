@@ -1,5 +1,4 @@
 export default function Breakpoint() {
-  return null;
   return (
     <div className="absolute top-0 left-0 h-10 w-10 text-lg bg-red-500 text-white flex items-center justify-center uppercase bg-opacity-40">
       <span className="inline sm:hidden">xs</span>
