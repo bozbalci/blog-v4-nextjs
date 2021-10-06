@@ -7,7 +7,7 @@ export default function Social() {
   return (
     <ContentLayout>
       <ContentLayout.Head>
-        <title>Social Links</title>
+        <title>Elsewhere — Berk Özbalcı</title>
       </ContentLayout.Head>
       <ContentLayout.Main>
         <Prose fullWidth>

@@ -22,11 +22,11 @@ export default [
       //   url: "/contact",
       //   external: false,
       // },
-      {
-        title: "MDX",
-        url: "/mdx-sample",
-        external: false,
-      },
+      // {
+      //   title: "MDX",
+      //   url: "/mdx-sample",
+      //   external: false,
+      // },
     ],
   },
 ];

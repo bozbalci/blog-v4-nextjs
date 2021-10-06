@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <ContentLayout>
       <ContentLayout.Head>
-        <title>404 / bozbalci</title>
+        <title>404 — Berk Özbalcı</title>
       </ContentLayout.Head>
       <ContentLayout.Main>
         <Prose fullWidth>

@@ -8,7 +8,7 @@ export default function MDXPage() {
   return (
     <ContentLayout>
       <ContentLayout.Head>
-        <title>MDX Sample</title>
+        <title>MDX Sample — Berk Özbalcı</title>
       </ContentLayout.Head>
       <ContentLayout.Main>
         <Prose fullWidth>

@@ -1,19 +1,22 @@
 import ContentLayout from "components/content-layout";
 import Prose from "components/prose";
 
-import IndexMDX from "content/pages/index.mdx";
+import UsesMDX, { Side } from "content/pages/uses.mdx";
 
 export default function Index() {
   return (
     <ContentLayout>
       <ContentLayout.Head>
-        <title>Berk Özbalcı</title>
+        <title>Uses — Berk Özbalcı</title>
       </ContentLayout.Head>
       <ContentLayout.Main>
         <Prose fullWidth>
-          <IndexMDX />
+          <UsesMDX />
         </Prose>
       </ContentLayout.Main>
+      <ContentLayout.Side>
+        <Side />
+      </ContentLayout.Side>
     </ContentLayout>
   );
 }

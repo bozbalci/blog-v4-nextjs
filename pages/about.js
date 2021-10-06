@@ -7,7 +7,7 @@ export default function About() {
   return (
     <ContentLayout>
       <ContentLayout.Head>
-        <title>About</title>
+        <title>About — Berk Özbalcı</title>
       </ContentLayout.Head>
       <ContentLayout.Main>
         <Prose fullWidth>
