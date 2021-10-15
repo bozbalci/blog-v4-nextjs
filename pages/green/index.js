@@ -1,3 +1,4 @@
+import ThemeToggleButton from "components/theme-toggle-button";
 import { useEffect, useRef, useState } from "react";
 import { saveSvgAsPng } from "save-svg-as-png";
 
@@ -22,12 +23,17 @@ export default function Green() {
 
   return (
     <main className="mx-4 mt-8">
-      <h1 className="text-6xl font-black tracking-tight">Green</h1>
+      <h1 className="text-6xl font-black tracking-tight dark:text-green-100">
+        Green
+      </h1>
+      <div className="my-8">
+        <ThemeToggleButton />
+      </div>
       <form className="mt-8 mb-8">
         <divk className="flex items-center">
           <label htmlFor="overlayText">
             <a
-              className="font-bold underline hover:no-underline text-blue-600"
+              className="font-bold underline hover:no-underline dark:text-green-100"
               href="https://www.youtube.com/watch?v=y8kEiL81_R4"
             >
               How much a dollar cost?
@@ -38,11 +44,11 @@ export default function Green() {
             type="text"
             name="overlayText"
             value={overlayText}
-            className="ml-4 p-2 border-2 border-gray-600"
+            className="ml-4 p-2 border-2 border-gray-600 dark:border-green-600 dark:bg-green-900 dark:text-green-100"
             onChange={(e) => setOverlayText(e.target.value)}
           />
         </divk>
-        <div className="mt-4">
+        <div className="mt-4 dark:text-green-100">
           <label htmlFor="imageUpload">
             Profile picture <span className="font-bold">†</span>
           </label>
@@ -93,17 +99,17 @@ export default function Green() {
       </div>
       <div className="my-8">
         <button
-          className="p-4 border-2 border-green-900 bg-green-600 hover:bg-green-800 uppercase tracking-loose text-green-100 font-black hover:shadow-lg"
+          className="p-4 border-2 border-green-900 dark:border-green-600 bg-green-600 hover:bg-green-800 uppercase tracking-loose text-green-100 font-black hover:shadow-lg"
           onClick={onDownloadImageClicked}
         >
           Download image
         </button>
       </div>
-      <div className="mt-8">
+      <div className="mt-8 dark:text-green-100">
         <div className="text-sm">
           <span className="font-bold">*:</span> USD/TRY value retrieved from{" "}
           <a
-            className="underline hover:no-underline text-blue-600 font-bold"
+            className="underline hover:no-underline dark:text-green-100 font-bold"
             href="https://exchangerate.host/"
           >
             exchangerate.host
