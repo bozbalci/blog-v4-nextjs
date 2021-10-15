@@ -1,3 +1,4 @@
+import Head from "next/head";
 import ThemeToggleButton from "components/theme-toggle-button";
 import { useEffect, useRef, useState } from "react";
 import { saveSvgAsPng } from "save-svg-as-png";
@@ -23,6 +24,9 @@ export default function Green() {
 
   return (
     <main className="mx-4 mt-8">
+      <Head>
+        <title>Green</title>
+      </Head>
       <h1 className="text-6xl font-black tracking-tight dark:text-green-100">
         Green
       </h1>
