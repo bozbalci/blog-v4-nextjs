@@ -11,7 +11,7 @@ export default function Index() {
       </ContentLayout.Head>
       <ContentLayout.Main>
         <Prose fullWidth>
-          <IndexMDX />
+          <p>Book a 30-minute meeting with me</p>
         </Prose>
       </ContentLayout.Main>
     </ContentLayout>
