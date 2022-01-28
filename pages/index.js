@@ -1,19 +1,10 @@
 import ContentLayout from "components/content-layout";
 import Prose from "components/prose";
 
-import IndexMDX from "content/pages/index.mdx";
-
 export default function Index() {
   return (
-    <ContentLayout>
-      <ContentLayout.Head>
-        <title>Berk Özbalcı</title>
-      </ContentLayout.Head>
-      <ContentLayout.Main>
-        <Prose fullWidth>
-          <p>Book a 30-minute meeting with me</p>
-        </Prose>
-      </ContentLayout.Main>
-    </ContentLayout>
+      <div className="p-4 bg-secondary-900 text-secondary-100">
+          <p className="text-4xl"><a className="text-primary-400 underline hover:no-underline" href="http://calendly.com/bozbalci/30min">Book a meeting with me</a></p>
+      </div>
   );
 }
