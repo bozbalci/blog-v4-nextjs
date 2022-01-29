@@ -7,9 +7,12 @@ export default function Green() {
   const [overlayText, setOverlayText] = useState("");
   const [imageFile, setImageFile] = useState(null);
 
-  useEffect(async () => {
-    const repsonse = await fetch("/api/usdtry");
-    const data = await repsonse.json();
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch("/api/usdtry");
+      return await response.json();
+    }
+    const data = fetchData();
     const formatted = parseFloat(data.usdtry).toFixed(2);
     setOverlayText(formatted);
   }, []);

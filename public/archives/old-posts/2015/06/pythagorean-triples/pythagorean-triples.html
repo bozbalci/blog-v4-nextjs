@@ -3,60 +3,434 @@
 
 <p>Two years ago in math class we were given this problem as exercise:</p>
 <blockquote>
-<p>Find the square roots of the number <img src="https://i.upmath.me/svg/5%20%2B%2012i." alt="5 + 12i." /></p>
+  <p>
+    Find the square roots of the number
+    <img src="https://i.upmath.me/svg/5%20%2B%2012i." alt="5 + 12i." />
+  </p>
 </blockquote>
-<p>We are asked to find numbers <img src="https://i.upmath.me/svg/x%20%2B%20yi" alt="x + yi" /> which satisfy the following equation:</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/(x%20%2B%20yi)%5E2%20%3D%205%20%2B%2012i" alt="(x + yi)^2 = 5 + 12i" /></p>
+<p>
+  We are asked to find numbers
+  <img src="https://i.upmath.me/svg/x%20%2B%20yi" alt="x + yi" /> which satisfy
+  the following equation:
+</p>
+<p align="center">
+  <img
+    align="center"
+    src="https://i.upmath.me/svg/(x%20%2B%20yi)%5E2%20%3D%205%20%2B%2012i"
+    alt="(x + yi)^2 = 5 + 12i"
+  />
+</p>
 <p>Expanding the left-hand side of the equation gives:</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/(x%5E2%20-%20y%5E2)%20%2B%20(2xy)i%20%3D%205%20%2B%2012i" alt="(x^2 - y^2) + (2xy)i = 5 + 12i" /></p>
-<p>By the equality of the real parts, <img src="https://i.upmath.me/svg/x%5E2%20-%20y%5E2%20%3D%205" alt="x^2 - y^2 = 5" />; and by the equality of the imaginary parts, <img src="https://i.upmath.me/svg/2xy%20%3D%2012" alt="2xy = 12" />. We note that <img src="https://i.upmath.me/svg/x" alt="x" /> and <img src="https://i.upmath.me/svg/y" alt="y" /> must have the same signs (otherwise this product would be negative).</p>
-<p>Let’s return to the original equation for a moment. Since the Euclidean norm of both complex numbers in the equation must be equal to <img src="https://i.upmath.me/svg/13" alt="13" />, we can say that <img src="https://i.upmath.me/svg/x%5E2%20%2B%20y%5E2%20%3D%2013" alt="x^2 + y^2 = 13" />. Putting what we have found together:</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/x%5E2%20%2B%20y%5E2%20%3D%2013%20%5C%5C%0Ax%5E2%20-%20y%5E2%20%3D%205%20%5C%5C%0Axy%20%3E%200" alt="x^2 + y^2 = 13 \\
+<p align="center">
+  <img
+    align="center"
+    src="https://i.upmath.me/svg/(x%5E2%20-%20y%5E2)%20%2B%20(2xy)i%20%3D%205%20%2B%2012i"
+    alt="(x^2 - y^2) + (2xy)i = 5 + 12i"
+  />
+</p>
+<p>
+  By the equality of the real parts,
+  <img
+    src="https://i.upmath.me/svg/x%5E2%20-%20y%5E2%20%3D%205"
+    alt="x^2 - y^2 = 5"
+  />; and by the equality of the imaginary parts,
+  <img src="https://i.upmath.me/svg/2xy%20%3D%2012" alt="2xy = 12" />. We note
+  that <img src="https://i.upmath.me/svg/x" alt="x" /> and
+  <img src="https://i.upmath.me/svg/y" alt="y" /> must have the same signs
+  (otherwise this product would be negative).
+</p>
+<p>
+  Let’s return to the original equation for a moment. Since the Euclidean norm
+  of both complex numbers in the equation must be equal to
+  <img src="https://i.upmath.me/svg/13" alt="13" />, we can say that
+  <img
+    src="https://i.upmath.me/svg/x%5E2%20%2B%20y%5E2%20%3D%2013"
+    alt="x^2 + y^2 = 13"
+  />. Putting what we have found together:
+</p>
+<p align="center">
+  <img
+    align="center"
+    src="https://i.upmath.me/svg/x%5E2%20%2B%20y%5E2%20%3D%2013%20%5C%5C%0Ax%5E2%20-%20y%5E2%20%3D%205%20%5C%5C%0Axy%20%3E%200"
+    alt="x^2 + y^2 = 13 \\
 x^2 - y^2 = 5 \\
-xy &gt; 0" /></p>
-<p>Summing the two equations will yield <img src="https://i.upmath.me/svg/x%5E2%20%3D%209" alt="x^2 = 9" />, and by back-substitution we find <img src="https://i.upmath.me/svg/y%5E2%20%3D%204" alt="y^2 = 4" />. We carefully write two solutions in which <img src="https://i.upmath.me/svg/x" alt="x" /> and <img src="https://i.upmath.me/svg/y" alt="y" /> have the same sign:</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/x%20%2B%20yi%20%3D%203%20%2B%202i%20%5Ctext%7B%2C%20or%20%7D%20x%20%2B%20yi%20%3D%20-3%20-%202i." alt="x + yi = 3 + 2i \text{, or } x + yi = -3 - 2i." /></p>
-<p>This particular method made me realise a connection between complex numbers and Pythagorean triples. Before proceeding to relate with Pythagorean triples, I would like to give a few definitions.</p>
+xy &gt; 0"
+  />
+</p>
+<p>
+  Summing the two equations will yield
+  <img src="https://i.upmath.me/svg/x%5E2%20%3D%209" alt="x^2 = 9" />, and by
+  back-substitution we find
+  <img src="https://i.upmath.me/svg/y%5E2%20%3D%204" alt="y^2 = 4" />. We
+  carefully write two solutions in which
+  <img src="https://i.upmath.me/svg/x" alt="x" /> and
+  <img src="https://i.upmath.me/svg/y" alt="y" /> have the same sign:
+</p>
+<p align="center">
+  <img
+    align="center"
+    src="https://i.upmath.me/svg/x%20%2B%20yi%20%3D%203%20%2B%202i%20%5Ctext%7B%2C%20or%20%7D%20x%20%2B%20yi%20%3D%20-3%20-%202i."
+    alt="x + yi = 3 + 2i \text{, or } x + yi = -3 - 2i."
+  />
+</p>
+<p>
+  This particular method made me realise a connection between complex numbers
+  and Pythagorean triples. Before proceeding to relate with Pythagorean triples,
+  I would like to give a few definitions.
+</p>
 <ul>
-<li>A <strong>Pythagorean triple</strong> consists of three positive integers <img src="https://i.upmath.me/svg/a" alt="a" />, <img src="https://i.upmath.me/svg/b" alt="b" /> anc <img src="https://i.upmath.me/svg/c" alt="c" />, such that <img src="https://i.upmath.me/svg/a%5E2%20%2B%20b%5E2%20%3D%20c%5E2" alt="a^2 + b^2 = c^2" />.</li>
-<li>We will write such triples as <img src="https://i.upmath.me/svg/(a%2C%20b%2C%20c)" alt="(a, b, c)" />. Example: <img src="https://i.upmath.me/svg/(5%2C%2012%2C%2013)" alt="(5, 12, 13)" />.</li>
-<li>If <img src="https://i.upmath.me/svg/(a%2C%20b%2C%20c)" alt="(a, b, c)" /> is a Pythagorean triple, then so is <img src="https://i.upmath.me/svg/(ka%2C%20kb%2C%20kc)" alt="(ka, kb, kc)" /> for any positive integer <img src="https://i.upmath.me/svg/k" alt="k" />.</li>
-<li>A <strong>primitive Pythagorean triple</strong> is one in which <img src="https://i.upmath.me/svg/a" alt="a" />, <img src="https://i.upmath.me/svg/b" alt="b" /> and <img src="https://i.upmath.me/svg/c" alt="c" /> are coprime.</li>
+  <li>
+    A <strong>Pythagorean triple</strong> consists of three positive integers
+    <img src="https://i.upmath.me/svg/a" alt="a" />,
+    <img src="https://i.upmath.me/svg/b" alt="b" /> anc
+    <img src="https://i.upmath.me/svg/c" alt="c" />, such that
+    <img
+      src="https://i.upmath.me/svg/a%5E2%20%2B%20b%5E2%20%3D%20c%5E2"
+      alt="a^2 + b^2 = c^2"
+    />.
+  </li>
+  <li>
+    We will write such triples as
+    <img src="https://i.upmath.me/svg/(a%2C%20b%2C%20c)" alt="(a, b, c)" />.
+    Example:
+    <img src="https://i.upmath.me/svg/(5%2C%2012%2C%2013)" alt="(5, 12, 13)" />.
+  </li>
+  <li>
+    If
+    <img src="https://i.upmath.me/svg/(a%2C%20b%2C%20c)" alt="(a, b, c)" /> is a
+    Pythagorean triple, then so is
+    <img
+      src="https://i.upmath.me/svg/(ka%2C%20kb%2C%20kc)"
+      alt="(ka, kb, kc)"
+    />
+    for any positive integer <img src="https://i.upmath.me/svg/k" alt="k" />.
+  </li>
+  <li>
+    A <strong>primitive Pythagorean triple</strong> is one in which
+    <img src="https://i.upmath.me/svg/a" alt="a" />,
+    <img src="https://i.upmath.me/svg/b" alt="b" /> and
+    <img src="https://i.upmath.me/svg/c" alt="c" /> are coprime.
+  </li>
 </ul>
-<p>Recall how we equated the Euclidean norms of the two complex numbers in the first equation in solving the problem. Now we will use the second equation, the expanded form and equate that norm with the other. We have proved the following formula (which can also be proved by elementary algebra):</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/(x%5E2%20-%20y%5E2)%5E2%20%2B%20(2xy)%5E2%20%3D%20(x%5E2%20%2B%20y%5E2)%5E2%20%5Ctag%7B1%7D" alt="(x^2 - y^2)^2 + (2xy)^2 = (x^2 + y^2)^2 \tag{1}" /></p>
-<p>We will see that plugging the values we’ve found in the solution of the problem will yield a nice result. Let’s do so. We can either plug <img src="https://i.upmath.me/svg/x%20%3D%203" alt="x = 3" /> and <img src="https://i.upmath.me/svg/y%20%3D%202" alt="y = 2" /> or <img src="https://i.upmath.me/svg/x%20%3D%20-3" alt="x = -3" /> and <img src="https://i.upmath.me/svg/y%20%3D%20-2" alt="y = -2" />, I will go with the former:</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/(3%5E2%20-%202%5E2)%20%2B%20(2%20%5Ccdot%203%20%5Ccdot%202)%5E2%20%3D%20(3%5E2%20%2B%202%5E2)%20%5C%5C%0A5%5E2%20%2B%2012%5E2%20%3D%2013%5E2" alt="(3^2 - 2^2) + (2 \cdot 3 \cdot 2)^2 = (3^2 + 2^2) \\
-5^2 + 12^2 = 13^2" /></p>
-<p>How pleasant! We know that <img src="https://i.upmath.me/svg/(5%2C%2012%2C%2013)" alt="(5, 12, 13)" /> is a primitive Pythagorean triple. We can try this with other Pythagorean triples we know. I tried this with <img src="https://i.upmath.me/svg/3%20%2B%204i" alt="3 + 4i" />, which is the square of <img src="https://i.upmath.me/svg/2%2Bi" alt="2+i" />, and when we put <img src="https://i.upmath.me/svg/x%3D2" alt="x=2" /> and <img src="https://i.upmath.me/svg/y%3D1" alt="y=1" /> in <img src="https://i.upmath.me/svg/(1)" alt="(1)" /> we will arrive at the equation <img src="https://i.upmath.me/svg/3%5E2%20%2B%204%5E2%20%3D%205%5E2" alt="3^2 + 4^2 = 5^2" />. In this way, <img src="https://i.upmath.me/svg/a" alt="a" />, <img src="https://i.upmath.me/svg/b" alt="b" /> and <img src="https://i.upmath.me/svg/c" alt="c" /> is found by this formula:</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/a%20%3D%20x%5E2%20-%20y%5E2%20%5Ctext%7B%2C%20%7D%20b%20%3D%202xy%5Ctext%7B%2C%20%7Dc%20%3D%20x%5E2%20%2B%20y%5E2" alt="a = x^2 - y^2 \text{, } b = 2xy\text{, }c = x^2 + y^2" /></p>
-<p>and we can plug positive integers <img src="https://i.upmath.me/svg/x" alt="x" /> and <img src="https://i.upmath.me/svg/y" alt="y" /> to find Pythagorean triples. Taking the square roots of numbers such as <img src="https://i.upmath.me/svg/3%20%2B%204i" alt="3 + 4i" />, <img src="https://i.upmath.me/svg/5%20%2B%2012i" alt="5 + 12i" /> is essentially breaking down the Pythagorean triple into a tuple when seeded to <img src="https://i.upmath.me/svg/(1)" alt="(1)" /> will give us the equation back.</p>
-<p>It turns out that I was not the first one discovering this formula. Upon some research I’ve found that <img src="https://i.upmath.me/svg/(1)" alt="(1)" /> is very similar to the better known <a href="https://en.wikipedia.org/wiki/Pythagorean_triple#Generating_a_triple">Euclid’s formula</a> and was used to generate Pythagorean triples for thousands of years. It was proved that Euclid’s formula could generate every possible primitive Pythagorean triple, and with slight modification to the formula we can generate all Pythagorean triples uniquely:</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/a%20%3D%20k%20%5Ccdot%20(m%5E2%20-%20n%5E2)%20%5Ctext%7B%2C%20%7D%20b%20%3D%20k%20%5Ccdot%20(2mn)%20%5Ctext%7B%2C%20%7D%20c%20%3D%20k%20%5Ccdot%20(m%5E2%20%2B%20n%5E2)" alt="a = k \cdot (m^2 - n^2) \text{, } b = k \cdot (2mn) \text{, } c = k \cdot (m^2 + n^2)" /></p>
-<p>where <img src="https://i.upmath.me/svg/m" alt="m" />, <img src="https://i.upmath.me/svg/n" alt="n" />, and <img src="https://i.upmath.me/svg/k" alt="k" /> are positive integers with <img src="https://i.upmath.me/svg/m%20%3E%20n" alt="m &gt; n" />, <img src="https://i.upmath.me/svg/m%20-%20n" alt="m - n" /> odd, and with <img src="https://i.upmath.me/svg/m" alt="m" /> and <img src="https://i.upmath.me/svg/n" alt="n" /> coprime. A proof of Euclid’s formula is given at the Wikipedia link above.</p>
-<p>Further investigation of this relation reveals a glimpse of a very important mathematical law: the law of <a href="https://en.wikipedia.org/wiki/Quadratic_reciprocity">quadratic reciprocity</a>. The earliest result of quadratic reciprocity was that a prime can be written as <img src="https://i.upmath.me/svg/p%20%3D%20x%5E2%20%2B%20y%5E2" alt="p = x^2 + y^2" /> if and only if <img src="https://i.upmath.me/svg/p%20%5Cequiv%201%20%5Cpmod%7B4%7D" alt="p \equiv 1 \pmod{4}" />. The <a href="http://math.ucsd.edu/~abucur/oldcourses/2013/104a/fermatprimes.pdf">proof</a> was broken up into two parts: The Descent Step which states that if <img src="https://i.upmath.me/svg/p" alt="p" /> is a divisor of the number <img src="https://i.upmath.me/svg/a%5E2%20%2B%20b%5E2" alt="a^2 + b^2" />, then <img src="https://i.upmath.me/svg/p" alt="p" /> can be written as <img src="https://i.upmath.me/svg/x%5E2%20%2B%20y%5E2" alt="x^2 + y^2" />. And then the Reciprocity Step which says that if <img src="https://i.upmath.me/svg/p%20%5Cequiv%201%20%5Cpmod%7B4%7D" alt="p \equiv 1 \pmod{4}" />, then it divides a number in the form <img src="https://i.upmath.me/svg/a%5E2%2Bb%5E2" alt="a^2+b^2" />.</p>
-<p>What we have done in the solution of the problem above is an example of the Descent Step. To see this, notice that <img src="https://i.upmath.me/svg/13" alt="13" /> divides <img src="https://i.upmath.me/svg/13%5E2%20%3D%205%5E2%20%2B%2012%5E2" alt="13^2 = 5^2 + 12^2" />. The Descent Step says that we should be able to write <img src="https://i.upmath.me/svg/13" alt="13" /> as the sum of two squares, and if we look at the numbers we’ve found in the solution of the question above, we’ll see that <img src="https://i.upmath.me/svg/13%3D2%5E2%2B3%5E2" alt="13=2^2+3^2" />.</p>
-<p>Complex numbers enter the discussion once we see that a number can be written as <img src="https://i.upmath.me/svg/n%20%3D%20x%5E2%20%2B%20y%5E2" alt="n = x^2 + y^2" /> if and only if it can be written as <img src="https://i.upmath.me/svg/n%20%3D%20(x%20%2B%20yi)(x%20-%20yi)" alt="n = (x + yi)(x - yi)" /> (the right-hand side of both equations are equal). It factors nicely, when we allow <img src="https://i.upmath.me/svg/i" alt="i" /> to be used. So, quadratic reciprocity says that a prime will factor after allowing <img src="https://i.upmath.me/svg/i" alt="i" /> if and only if the prime <img src="https://i.upmath.me/svg/p%20%5Cequiv%201%20%5Cpmod%7B4%7D" alt="p \equiv 1 \pmod{4}" />.</p>
-<p>So how does this give us Pythagorean Triples? If I let <img src="https://i.upmath.me/svg/x" alt="x" /> and <img src="https://i.upmath.me/svg/y" alt="y" /> be any integers, then</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/n%20%3D%20x%5E2%20%2B%20y%5E2%20%3D%20(x%2Byi)(x-yi)" alt="n = x^2 + y^2 = (x+yi)(x-yi)" /></p>
-<p>is an integer (and a product of two <a href="https://en.wikipedia.org/wiki/Gaussian_integer">Gaussian integers</a>, at that!) If we square both sides of the equation,</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/n%5E2%20%3D%20(x%2Byi)%5E2%20%5Ccdot%20(x-yi)%5E2%20%3D%20%5Cbig(%20(x%5E2%20-%20y%5E2)%20%2B%202xyi%20%5Cbig)%20%5Ccdot%20%5Cbig(%20(x%5E2%20-%20y%5E2)%20-%202xyi%20%5Cbig)" alt="n^2 = (x+yi)^2 \cdot (x-yi)^2 = \big( (x^2 - y^2) + 2xyi \big) \cdot \big( (x^2 - y^2) - 2xyi \big)" /></p>
-<p>and this means that we have a Pythagorean triple: <img src="https://i.upmath.me/svg/n%5E2%20%3D%20a%5E2%20%2B%20b%5E2%20%3D%20(a%2Bbi)(a-bi)" alt="n^2 = a^2 + b^2 = (a+bi)(a-bi)" /> where <img src="https://i.upmath.me/svg/a%20%3D%20x%5E2%20-%20y%5E2" alt="a = x^2 - y^2" /> and <img src="https://i.upmath.me/svg/b%3D2xy" alt="b=2xy" />, this is exactly the generating formula for Pythagorean triples. Now, if I have a Pythagorean triple, <img src="https://i.upmath.me/svg/a%5E2%20%2B%20b%5E2%20%3D%20c%5E2" alt="a^2 + b^2 = c^2" /> then this means I can write <img src="https://i.upmath.me/svg/c%5E2%3D(a%2Bbi)(a-bi)" alt="c^2=(a+bi)(a-bi)" />. The Descent Step tells me that I can then find the square root of <img src="https://i.upmath.me/svg/a%2Bbi" alt="a+bi" />. It says that <img src="https://i.upmath.me/svg/c" alt="c" /> itself can be written like <img src="https://i.upmath.me/svg/c%3D(x%2Biy)(x-iy)" alt="c=(x+iy)(x-iy)" /> and by the formula we’ve found in this text we must have <img src="https://i.upmath.me/svg/a%2Bbi%3D(x%2Byi)%5E2" alt="a+bi=(x+yi)^2" /> which gives us the formula for <img src="https://i.upmath.me/svg/x" alt="x" /> and <img src="https://i.upmath.me/svg/y" alt="y" /> in terms of <img src="https://i.upmath.me/svg/a" alt="a" /> and <img src="https://i.upmath.me/svg/b" alt="b" />, just like we’ve found while rediscovering Euclid’s formula.</p>
+<p>
+  Recall how we equated the Euclidean norms of the two complex numbers in the
+  first equation in solving the problem. Now we will use the second equation,
+  the expanded form and equate that norm with the other. We have proved the
+  following formula (which can also be proved by elementary algebra):
+</p>
+<p align="center">
+  <img
+    align="center"
+    src="https://i.upmath.me/svg/(x%5E2%20-%20y%5E2)%5E2%20%2B%20(2xy)%5E2%20%3D%20(x%5E2%20%2B%20y%5E2)%5E2%20%5Ctag%7B1%7D"
+    alt="(x^2 - y^2)^2 + (2xy)^2 = (x^2 + y^2)^2 \tag{1}"
+  />
+</p>
+<p>
+  We will see that plugging the values we’ve found in the solution of the
+  problem will yield a nice result. Let’s do so. We can either plug
+  <img src="https://i.upmath.me/svg/x%20%3D%203" alt="x = 3" /> and
+  <img src="https://i.upmath.me/svg/y%20%3D%202" alt="y = 2" /> or
+  <img src="https://i.upmath.me/svg/x%20%3D%20-3" alt="x = -3" /> and
+  <img src="https://i.upmath.me/svg/y%20%3D%20-2" alt="y = -2" />, I will go
+  with the former:
+</p>
+<p align="center">
+  <img
+    align="center"
+    src="https://i.upmath.me/svg/(3%5E2%20-%202%5E2)%20%2B%20(2%20%5Ccdot%203%20%5Ccdot%202)%5E2%20%3D%20(3%5E2%20%2B%202%5E2)%20%5C%5C%0A5%5E2%20%2B%2012%5E2%20%3D%2013%5E2"
+    alt="(3^2 - 2^2) + (2 \cdot 3 \cdot 2)^2 = (3^2 + 2^2) \\
+5^2 + 12^2 = 13^2"
+  />
+</p>
+<p>
+  How pleasant! We know that
+  <img src="https://i.upmath.me/svg/(5%2C%2012%2C%2013)" alt="(5, 12, 13)" /> is
+  a primitive Pythagorean triple. We can try this with other Pythagorean triples
+  we know. I tried this with
+  <img src="https://i.upmath.me/svg/3%20%2B%204i" alt="3 + 4i" />, which is the
+  square of <img src="https://i.upmath.me/svg/2%2Bi" alt="2+i" />, and when we
+  put <img src="https://i.upmath.me/svg/x%3D2" alt="x=2" /> and
+  <img src="https://i.upmath.me/svg/y%3D1" alt="y=1" /> in
+  <img src="https://i.upmath.me/svg/(1)" alt="(1)" /> we will arrive at the
+  equation
+  <img
+    src="https://i.upmath.me/svg/3%5E2%20%2B%204%5E2%20%3D%205%5E2"
+    alt="3^2 + 4^2 = 5^2"
+  />. In this way, <img src="https://i.upmath.me/svg/a" alt="a" />,
+  <img src="https://i.upmath.me/svg/b" alt="b" /> and
+  <img src="https://i.upmath.me/svg/c" alt="c" /> is found by this formula:
+</p>
+<p align="center">
+  <img
+    align="center"
+    src="https://i.upmath.me/svg/a%20%3D%20x%5E2%20-%20y%5E2%20%5Ctext%7B%2C%20%7D%20b%20%3D%202xy%5Ctext%7B%2C%20%7Dc%20%3D%20x%5E2%20%2B%20y%5E2"
+    alt="a = x^2 - y^2 \text{, } b = 2xy\text{, }c = x^2 + y^2"
+  />
+</p>
+<p>
+  and we can plug positive integers
+  <img src="https://i.upmath.me/svg/x" alt="x" /> and
+  <img src="https://i.upmath.me/svg/y" alt="y" /> to find Pythagorean triples.
+  Taking the square roots of numbers such as
+  <img src="https://i.upmath.me/svg/3%20%2B%204i" alt="3 + 4i" />,
+  <img src="https://i.upmath.me/svg/5%20%2B%2012i" alt="5 + 12i" /> is
+  essentially breaking down the Pythagorean triple into a tuple when seeded to
+  <img src="https://i.upmath.me/svg/(1)" alt="(1)" /> will give us the equation
+  back.
+</p>
+<p>
+  It turns out that I was not the first one discovering this formula. Upon some
+  research I’ve found that
+  <img src="https://i.upmath.me/svg/(1)" alt="(1)" /> is very similar to the
+  better known
+  <a href="https://en.wikipedia.org/wiki/Pythagorean_triple#Generating_a_triple"
+    >Euclid’s formula</a
+  >
+  and was used to generate Pythagorean triples for thousands of years. It was
+  proved that Euclid’s formula could generate every possible primitive
+  Pythagorean triple, and with slight modification to the formula we can
+  generate all Pythagorean triples uniquely:
+</p>
+<p align="center">
+  <img
+    align="center"
+    src="https://i.upmath.me/svg/a%20%3D%20k%20%5Ccdot%20(m%5E2%20-%20n%5E2)%20%5Ctext%7B%2C%20%7D%20b%20%3D%20k%20%5Ccdot%20(2mn)%20%5Ctext%7B%2C%20%7D%20c%20%3D%20k%20%5Ccdot%20(m%5E2%20%2B%20n%5E2)"
+    alt="a = k \cdot (m^2 - n^2) \text{, } b = k \cdot (2mn) \text{, } c = k \cdot (m^2 + n^2)"
+  />
+</p>
+<p>
+  where <img src="https://i.upmath.me/svg/m" alt="m" />,
+  <img src="https://i.upmath.me/svg/n" alt="n" />, and
+  <img src="https://i.upmath.me/svg/k" alt="k" /> are positive integers with
+  <img src="https://i.upmath.me/svg/m%20%3E%20n" alt="m &gt; n" />,
+  <img src="https://i.upmath.me/svg/m%20-%20n" alt="m - n" /> odd, and with
+  <img src="https://i.upmath.me/svg/m" alt="m" /> and
+  <img src="https://i.upmath.me/svg/n" alt="n" /> coprime. A proof of Euclid’s
+  formula is given at the Wikipedia link above.
+</p>
+<p>
+  Further investigation of this relation reveals a glimpse of a very important
+  mathematical law: the law of
+  <a href="https://en.wikipedia.org/wiki/Quadratic_reciprocity"
+    >quadratic reciprocity</a
+  >. The earliest result of quadratic reciprocity was that a prime can be
+  written as
+  <img
+    src="https://i.upmath.me/svg/p%20%3D%20x%5E2%20%2B%20y%5E2"
+    alt="p = x^2 + y^2"
+  />
+  if and only if
+  <img
+    src="https://i.upmath.me/svg/p%20%5Cequiv%201%20%5Cpmod%7B4%7D"
+    alt="p \equiv 1 \pmod{4}"
+  />. The
+  <a href="http://math.ucsd.edu/~abucur/oldcourses/2013/104a/fermatprimes.pdf"
+    >proof</a
+  >
+  was broken up into two parts: The Descent Step which states that if
+  <img src="https://i.upmath.me/svg/p" alt="p" /> is a divisor of the number
+  <img src="https://i.upmath.me/svg/a%5E2%20%2B%20b%5E2" alt="a^2 + b^2" />,
+  then <img src="https://i.upmath.me/svg/p" alt="p" /> can be written as
+  <img src="https://i.upmath.me/svg/x%5E2%20%2B%20y%5E2" alt="x^2 + y^2" />. And
+  then the Reciprocity Step which says that if
+  <img
+    src="https://i.upmath.me/svg/p%20%5Cequiv%201%20%5Cpmod%7B4%7D"
+    alt="p \equiv 1 \pmod{4}"
+  />, then it divides a number in the form
+  <img src="https://i.upmath.me/svg/a%5E2%2Bb%5E2" alt="a^2+b^2" />.
+</p>
+<p>
+  What we have done in the solution of the problem above is an example of the
+  Descent Step. To see this, notice that
+  <img src="https://i.upmath.me/svg/13" alt="13" /> divides
+  <img
+    src="https://i.upmath.me/svg/13%5E2%20%3D%205%5E2%20%2B%2012%5E2"
+    alt="13^2 = 5^2 + 12^2"
+  />. The Descent Step says that we should be able to write
+  <img src="https://i.upmath.me/svg/13" alt="13" /> as the sum of two squares,
+  and if we look at the numbers we’ve found in the solution of the question
+  above, we’ll see that
+  <img src="https://i.upmath.me/svg/13%3D2%5E2%2B3%5E2" alt="13=2^2+3^2" />.
+</p>
+<p>
+  Complex numbers enter the discussion once we see that a number can be written
+  as
+  <img
+    src="https://i.upmath.me/svg/n%20%3D%20x%5E2%20%2B%20y%5E2"
+    alt="n = x^2 + y^2"
+  />
+  if and only if it can be written as
+  <img
+    src="https://i.upmath.me/svg/n%20%3D%20(x%20%2B%20yi)(x%20-%20yi)"
+    alt="n = (x + yi)(x - yi)"
+  />
+  (the right-hand side of both equations are equal). It factors nicely, when we
+  allow <img src="https://i.upmath.me/svg/i" alt="i" /> to be used. So,
+  quadratic reciprocity says that a prime will factor after allowing
+  <img src="https://i.upmath.me/svg/i" alt="i" /> if and only if the prime
+  <img
+    src="https://i.upmath.me/svg/p%20%5Cequiv%201%20%5Cpmod%7B4%7D"
+    alt="p \equiv 1 \pmod{4}"
+  />.
+</p>
+<p>
+  So how does this give us Pythagorean Triples? If I let
+  <img src="https://i.upmath.me/svg/x" alt="x" /> and
+  <img src="https://i.upmath.me/svg/y" alt="y" /> be any integers, then
+</p>
+<p align="center">
+  <img
+    align="center"
+    src="https://i.upmath.me/svg/n%20%3D%20x%5E2%20%2B%20y%5E2%20%3D%20(x%2Byi)(x-yi)"
+    alt="n = x^2 + y^2 = (x+yi)(x-yi)"
+  />
+</p>
+<p>
+  is an integer (and a product of two
+  <a href="https://en.wikipedia.org/wiki/Gaussian_integer">Gaussian integers</a
+  >, at that!) If we square both sides of the equation,
+</p>
+<p align="center">
+  <img
+    align="center"
+    src="https://i.upmath.me/svg/n%5E2%20%3D%20(x%2Byi)%5E2%20%5Ccdot%20(x-yi)%5E2%20%3D%20%5Cbig(%20(x%5E2%20-%20y%5E2)%20%2B%202xyi%20%5Cbig)%20%5Ccdot%20%5Cbig(%20(x%5E2%20-%20y%5E2)%20-%202xyi%20%5Cbig)"
+    alt="n^2 = (x+yi)^2 \cdot (x-yi)^2 = \big( (x^2 - y^2) + 2xyi \big) \cdot \big( (x^2 - y^2) - 2xyi \big)"
+  />
+</p>
+<p>
+  and this means that we have a Pythagorean triple:
+  <img
+    src="https://i.upmath.me/svg/n%5E2%20%3D%20a%5E2%20%2B%20b%5E2%20%3D%20(a%2Bbi)(a-bi)"
+    alt="n^2 = a^2 + b^2 = (a+bi)(a-bi)"
+  />
+  where
+  <img
+    src="https://i.upmath.me/svg/a%20%3D%20x%5E2%20-%20y%5E2"
+    alt="a = x^2 - y^2"
+  />
+  and <img src="https://i.upmath.me/svg/b%3D2xy" alt="b=2xy" />, this is exactly
+  the generating formula for Pythagorean triples. Now, if I have a Pythagorean
+  triple,
+  <img
+    src="https://i.upmath.me/svg/a%5E2%20%2B%20b%5E2%20%3D%20c%5E2"
+    alt="a^2 + b^2 = c^2"
+  />
+  then this means I can write
+  <img
+    src="https://i.upmath.me/svg/c%5E2%3D(a%2Bbi)(a-bi)"
+    alt="c^2=(a+bi)(a-bi)"
+  />. The Descent Step tells me that I can then find the square root of
+  <img src="https://i.upmath.me/svg/a%2Bbi" alt="a+bi" />. It says that
+  <img src="https://i.upmath.me/svg/c" alt="c" /> itself can be written like
+  <img src="https://i.upmath.me/svg/c%3D(x%2Biy)(x-iy)" alt="c=(x+iy)(x-iy)" />
+  and by the formula we’ve found in this text we must have
+  <img
+    src="https://i.upmath.me/svg/a%2Bbi%3D(x%2Byi)%5E2"
+    alt="a+bi=(x+yi)^2"
+  />
+  which gives us the formula for
+  <img src="https://i.upmath.me/svg/x" alt="x" /> and
+  <img src="https://i.upmath.me/svg/y" alt="y" /> in terms of
+  <img src="https://i.upmath.me/svg/a" alt="a" /> and
+  <img src="https://i.upmath.me/svg/b" alt="b" />, just like we’ve found while
+  rediscovering Euclid’s formula.
+</p>
 <p>A few final notes:</p>
 <ul>
-<li>
-<p>This will only work if we start with a Pythagorean triple. If we don’t, we will get complex numbers with irrational coefficients.</p>
-</li>
-<li>
-<p>This will work in more general cases. If <img src="https://i.upmath.me/svg/a%5E2%20%2B%20nb%5E2%20%3D%20c%5E2" alt="a^2 + nb^2 = c^2" />, then the Descent Step still holds (but not the Reciprocity Step) and we can write <img src="https://i.upmath.me/svg/c%3Dx%5E2%2Bny%5E2" alt="c=x^2+ny^2" /> and we will have the following equality:</p>
-</li>
+  <li>
+    <p>
+      This will only work if we start with a Pythagorean triple. If we don’t, we
+      will get complex numbers with irrational coefficients.
+    </p>
+  </li>
+  <li>
+    <p>
+      This will work in more general cases. If
+      <img
+        src="https://i.upmath.me/svg/a%5E2%20%2B%20nb%5E2%20%3D%20c%5E2"
+        alt="a^2 + nb^2 = c^2"
+      />, then the Descent Step still holds (but not the Reciprocity Step) and
+      we can write
+      <img src="https://i.upmath.me/svg/c%3Dx%5E2%2Bny%5E2" alt="c=x^2+ny^2" />
+      and we will have the following equality:
+    </p>
+  </li>
 </ul>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/c%20%3D%20(x%20%2B%20%5Csqrt%7B-n%7Dy)(x%20-%20%5Csqrt%7B-n%7Dy)" alt="c = (x + \sqrt{-n}y)(x - \sqrt{-n}y)" /></p>
-<p>with <img src="https://i.upmath.me/svg/a%20%2B%20%5Csqrt%7B-n%7Db%20%3D%20(x%20%2B%20%5Csqrt%7B-n%7Dy)%5E2" alt="a + \sqrt{-n}b = (x + \sqrt{-n}y)^2" /> and so <img src="https://i.upmath.me/svg/a%20%3D%20x%5E2%20-%20ny%5E2" alt="a = x^2 - ny^2" /> and <img src="https://i.upmath.me/svg/b%3D2xy" alt="b=2xy" />. Let’s call this an <strong>n-Pythagorean triple</strong>. An example would be with <img src="https://i.upmath.me/svg/x%3D2" alt="x=2" />, <img src="https://i.upmath.me/svg/y%3D1" alt="y=1" /> and <img src="https://i.upmath.me/svg/n%3D3" alt="n=3" />:</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/7%20%3D%202%5E2%20%2B%203(1%5E2)%20%3D%20(2%20%2B%20%5Csqrt%7B-3%7D)(2%20-%20%5Csqrt%7B-3%7D)." alt="7 = 2^2 + 3(1^2) = (2 + \sqrt{-3})(2 - \sqrt{-3})." /></p>
+<p align="center">
+  <img
+    align="center"
+    src="https://i.upmath.me/svg/c%20%3D%20(x%20%2B%20%5Csqrt%7B-n%7Dy)(x%20-%20%5Csqrt%7B-n%7Dy)"
+    alt="c = (x + \sqrt{-n}y)(x - \sqrt{-n}y)"
+  />
+</p>
+<p>
+  with
+  <img
+    src="https://i.upmath.me/svg/a%20%2B%20%5Csqrt%7B-n%7Db%20%3D%20(x%20%2B%20%5Csqrt%7B-n%7Dy)%5E2"
+    alt="a + \sqrt{-n}b = (x + \sqrt{-n}y)^2"
+  />
+  and so
+  <img
+    src="https://i.upmath.me/svg/a%20%3D%20x%5E2%20-%20ny%5E2"
+    alt="a = x^2 - ny^2"
+  />
+  and <img src="https://i.upmath.me/svg/b%3D2xy" alt="b=2xy" />. Let’s call this
+  an <strong>n-Pythagorean triple</strong>. An example would be with
+  <img src="https://i.upmath.me/svg/x%3D2" alt="x=2" />,
+  <img src="https://i.upmath.me/svg/y%3D1" alt="y=1" /> and
+  <img src="https://i.upmath.me/svg/n%3D3" alt="n=3" />:
+</p>
+<p align="center">
+  <img
+    align="center"
+    src="https://i.upmath.me/svg/7%20%3D%202%5E2%20%2B%203(1%5E2)%20%3D%20(2%20%2B%20%5Csqrt%7B-3%7D)(2%20-%20%5Csqrt%7B-3%7D)."
+    alt="7 = 2^2 + 3(1^2) = (2 + \sqrt{-3})(2 - \sqrt{-3})."
+  />
+</p>
 <p>Squaring,</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/49%20%3D%20(2%5E2%20-%203(1%5E2))%5E2%20%2B%203(2%20%5Ccdot%202%20%5Ccdot%201)%5E2%20%3D%201%20%2B%203%20%5Ccdot%2016%20%3D%2049" alt="49 = (2^2 - 3(1^2))^2 + 3(2 \cdot 2 \cdot 1)^2 = 1 + 3 \cdot 16 = 49" /></p>
-<p>and so <img src="https://i.upmath.me/svg/49%20%3D%201%5E2%20%2B%203(4%5E2)" alt="49 = 1^2 + 3(4^2)" /> is a 3-Pythagorean triple. So the square root of <img src="https://i.upmath.me/svg/(1%2B4%5Csqrt%7B-3%7D)" alt="(1+4\sqrt{-3})" /> is <img src="https://i.upmath.me/svg/(2%20%2B%20%5Csqrt%7B-3%7D)" alt="(2 + \sqrt{-3})" />, and we got this result via Pythagorean triple methods. Neat!</p>
-<p>If you would like to read more about this topic, I would suggest you to read on <a href="https://en.wikipedia.org/wiki/Algebraic_number_theory">algebraic number theory</a> and especially the subfield &quot;Class Field Theory&quot; which uses extensions of numbers (like the way we allow <img src="https://i.upmath.me/svg/i" alt="i" /> in our calculations) to figure properties of numbers. Also I’ve been suggested <a href="http://www.amazon.com/Primes-Form-ny2-Multiplication-Mathematics/dp/1118390180/ref=sr_1_1?ie=UTF8&amp;qid=1390926725&amp;sr=8-1&amp;keywords=primes+of+the+form">Primes of the form <img src="https://i.upmath.me/svg/x%5E2%20%2B%20ny%5E2" alt="x^2 + ny^2" /></a> by Brian Cox, which starts with questions very similar to we investigated in this text and end with completely answering this very question (the relation between Pythagorean triples and complex multiplication) after going through three hundred years of mathematical development.</p>
+<p align="center">
+  <img
+    align="center"
+    src="https://i.upmath.me/svg/49%20%3D%20(2%5E2%20-%203(1%5E2))%5E2%20%2B%203(2%20%5Ccdot%202%20%5Ccdot%201)%5E2%20%3D%201%20%2B%203%20%5Ccdot%2016%20%3D%2049"
+    alt="49 = (2^2 - 3(1^2))^2 + 3(2 \cdot 2 \cdot 1)^2 = 1 + 3 \cdot 16 = 49"
+  />
+</p>
+<p>
+  and so
+  <img
+    src="https://i.upmath.me/svg/49%20%3D%201%5E2%20%2B%203(4%5E2)"
+    alt="49 = 1^2 + 3(4^2)"
+  />
+  is a 3-Pythagorean triple. So the square root of
+  <img
+    src="https://i.upmath.me/svg/(1%2B4%5Csqrt%7B-3%7D)"
+    alt="(1+4\sqrt{-3})"
+  />
+  is
+  <img
+    src="https://i.upmath.me/svg/(2%20%2B%20%5Csqrt%7B-3%7D)"
+    alt="(2 + \sqrt{-3})"
+  />, and we got this result via Pythagorean triple methods. Neat!
+</p>
+<p>
+  If you would like to read more about this topic, I would suggest you to read
+  on
+  <a href="https://en.wikipedia.org/wiki/Algebraic_number_theory"
+    >algebraic number theory</a
+  >
+  and especially the subfield &quot;Class Field Theory&quot; which uses
+  extensions of numbers (like the way we allow
+  <img src="https://i.upmath.me/svg/i" alt="i" /> in our calculations) to figure
+  properties of numbers. Also I’ve been suggested
+  <a
+    href="http://www.amazon.com/Primes-Form-ny2-Multiplication-Mathematics/dp/1118390180/ref=sr_1_1?ie=UTF8&amp;qid=1390926725&amp;sr=8-1&amp;keywords=primes+of+the+form"
+    >Primes of the form
+    <img src="https://i.upmath.me/svg/x%5E2%20%2B%20ny%5E2" alt="x^2 + ny^2"
+  /></a>
+  by Brian Cox, which starts with questions very similar to we investigated in
+  this text and end with completely answering this very question (the relation
+  between Pythagorean triples and complex multiplication) after going through
+  three hundred years of mathematical development.
+</p>
 <p>Happy math!</p>
 <p><a href="/">Return to site home</a></p>

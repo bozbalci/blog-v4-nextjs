@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default async (req, res) => {
+const usdToTry = async (req, res) => {
   try {
     const response = await fetch(
       "https://api.exchangerate.host/latest?base=USD&symbols=TRY"
@@ -13,3 +13,5 @@ export default async (req, res) => {
     res.status(500).json({ error: err });
   }
 };
+
+export default usdToTry;
