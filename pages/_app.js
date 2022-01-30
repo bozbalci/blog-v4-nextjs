@@ -6,6 +6,18 @@ import "styles/globals.css";
 
 const MarkdownLink = (props) => {
   const href = props.href;
+
+  if (href === "!") {
+    // Custom Wiki link
+    const slug = props.children.toString();
+    const newHref = `/wiki/${slug}`;
+    return (
+      <Link href={newHref}>
+        <a>{slug}</a>
+      </Link>
+    );
+  }
+
   const isInternalLink = href && (href.startsWith("/") || href.startsWith("#"));
 
   if (isInternalLink) {

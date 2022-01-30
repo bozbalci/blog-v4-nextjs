@@ -3,8 +3,14 @@ const colors = require("tailwindcss/colors");
 const shades = [100, 200, 300, 400, 500, 600, 700, 800, 900];
 
 module.exports = {
-  purge: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
+  content: [
+    "./pages/**/*.{js,jsx,mdx}",
+    "./content/**/*.{js,jsx,mdx}",
+    "./components/**/*.{js,jsx,mdx}",
+  ],
+
   darkMode: "class",
+
   theme: {
     boxShadow: (theme) => ({
       black: "4px 4px 0 0 black",
@@ -36,22 +42,19 @@ module.exports = {
       },
       colors: {
         primary: {
-          ...colors.purple,
+          ...colors.violet,
           // 950: "#340562",
           // 1000: "#0D0119",
         },
         secondary: colors.teal,
-        gray: colors.trueGray,
+        gray: colors.neutral,
+        current: "currentColor",
       },
       minHeight: {
         "1/2-screen": "50vh",
       },
       width: {
         "9/10": "90%",
-      },
-      fontFamily: {
-        // sans: ["Oxygen", "sans-serif"],
-        // serif: "Playfair Display, serif",
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -134,12 +137,6 @@ module.exports = {
           ],
         },
       }),
-    },
-  },
-  variants: {
-    extend: {
-      boxShadow: ["dark"],
-      typography: ["dark"],
     },
   },
   plugins: [require("@tailwindcss/typography")],

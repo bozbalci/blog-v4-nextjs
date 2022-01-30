@@ -12,11 +12,11 @@ export default [
         url: "/about",
         external: false,
       },
-      // {
-      //   title: "Works",
-      //   url: "/works",
-      //   external: false,
-      // },
+      {
+        title: "Uses",
+        url: "/uses",
+        external: false,
+      },
       // {
       //   title: "Contact",
       //   url: "/contact",
