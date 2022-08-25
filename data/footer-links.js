@@ -43,6 +43,11 @@ export default [
         external: true,
       },
       {
+        title: "LinkedIn",
+        url: "https://www.linkedin.com/in/bozbalci/",
+        external: true,
+      },
+      {
         title: "More",
         url: "/social",
         external: false,
